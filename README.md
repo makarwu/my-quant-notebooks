@@ -50,6 +50,6 @@ def iRk(prices):
 
 ## Used Formulas
 
-![Equations](fourier.png)
+![Equations](fourier_formulas.png)
 
 ![Demo](demo_fourier.gif)
