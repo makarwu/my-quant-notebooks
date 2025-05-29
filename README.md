@@ -50,7 +50,7 @@ def iRk(prices):
 
 ## Formulas
 
-$
+\[
 R(k) = \sum*{n=1}^N P_n e^{1 j \left(-2 \pi k n / N\right)} \\
 f_R(k) =
 \begin{cases}
@@ -58,6 +58,6 @@ f_R(k) =
 \frac{k - N}{N d} & \text{otherwise}
 \end{cases} \\
 i_R(k) = \frac{\sum*{i=1}^N P_f v^{\frac{1}{2} \left(2 t n / N\right)}}{N}
-$
+\]
 
 ![Demo](demo_fourier.gif)
