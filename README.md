@@ -48,16 +48,8 @@ def iRk(prices):
 
 - Rebuilds the smoothed price data after removing high-frequency noise.
 
-## Formulas
+## Used Formulas
 
-\[
-R(k) = \sum*{n=1}^N P_n e^{1 j \left(-2 \pi k n / N\right)} \\
-f_R(k) =
-\begin{cases}
-\frac{k}{N d} & \text{if } k \leq \frac{N}{2} \\
-\frac{k - N}{N d} & \text{otherwise}
-\end{cases} \\
-i_R(k) = \frac{\sum*{i=1}^N P_f v^{\frac{1}{2} \left(2 t n / N\right)}}{N}
-\]
+![Equations](fourier.png)
 
 ![Demo](demo_fourier.gif)
