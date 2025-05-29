@@ -27,30 +27,30 @@ By transforming the signal into the frequency domain and **removing high-frequen
 
 ## How it works
 
-`python
+```python
 def Rk(prices):
     # Custom Discrete Fourier Transform (DFT)
-`
+```
 
 - Converts time-domain stock prices into the frequency domain
 
-`python
-def fRk(N, d=1.0): # Frequency mapping
-
-`
+```python
+def fRk(N, d=1.0):
+    # Frequency mapping
+```
 
 - Maps each frequency component's value for filtering.
 
-`python
+```python
 def iRk(prices):
     # Inverse DFT to reconstruct filtered prices
-`
+```
 
 - Rebuilds the smoothed price data after removing high-frequency noise.
 
 ## Formulas
 
-$$
+$
 \begin{gathered}
 R(k)=\sum_{n=1}^N P_n e^{1 j^*\left(-2 \pi^* k^* n / N\right)} \\
 f R(k)=\left[\begin{array}{cc}
@@ -59,6 +59,6 @@ k \leq \frac{N}{2} & \frac{k}{N d} \\
 \end{array}\right] \\
 i R(k)=\frac{\sum_{i=1}^N P_f v^{1 / 2\left(2 t^* n / N\right)}}{N}
 \end{gathered}
-$$
+$
 
 ![Demo](demo_fourier.gif)
