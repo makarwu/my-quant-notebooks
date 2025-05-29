@@ -50,13 +50,13 @@ def iRk(prices):
 
 ## Formulas
 
-$$
+$
 R(k)=\sum_{n=1}^N P_n e^{1 j^*\left(-2 \pi^* k^* n / N\right)} \\
 f R(k)=\left[\begin{array}{cc}
 k \leq \frac{N}{2} & \frac{k}{N d} \\
 \text { else } & \frac{k-N}{N d}
 \end{array}\right] \\
 i R(k)=\frac{\sum_{i=1}^N P_f v^{1 / 2\left(2 t^* n / N\right)}}{N}
-$$
+$
 
 ![Demo](demo_fourier.gif)
